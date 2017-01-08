@@ -1,0 +1,84 @@
+ul {
+	list-style-type: none;
+	margin: 20px;
+	text-align: right;
+}
+
+li {
+	display: inline;
+	margin: 10px;
+	font-size: 16px;
+}
+
+#header {
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;	
+	text-align: center;
+	background: #403B4A; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #403B4A , #E7E9BB); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #403B4A , #E7E9BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 250px 0px 0px 0px;
+	color: white;
+}
+
+/*p {
+	font-size: 24px;
+	font-style: italic;
+	text-align: center;
+}*/
+
+h1 {
+	padding: 0 0;
+	margin: 0 0;
+	font-weight: bold;
+}
+
+h2 {
+	width: 500px;
+	margin: 75px auto 25px auto;	
+}
+
+h3 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+h6 {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+/*.about {
+	max-height: 300px;
+	margin: 0 auto;
+	max-width: 800px;
+}
+*/
+.logo {
+	/*width: 200px;
+	height: 200px;	
+	margin: auto auto;
+	float: left;*/
+	text-align: center;
+}
+
+.logo img {
+	max-width: 100%;
+    height: auto;
+	border-radius: 25px;
+}
+
+.description {
+	/*height: 300px;	
+	padding: 0 0;*/
+	text-align: left;
+
+}
+
+.description p {
+	font-size: 24px;
+	font-style: italic;
+	max-width: 100%;
+    height: auto;
+}
