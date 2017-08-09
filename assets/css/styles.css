@@ -117,6 +117,24 @@ span {
     margin-left: -50px;
 }
 
+.scroller {
+    position: fixed;
+    top: 86%;
+    left: 96%;
+}
+
+.scroller button {
+    display: block;
+    margin: 2px 0;
+    border: none;
+    background-color: #2f2f2f;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+
+
 /*------Education------*/
 .section-education {
     background-color: #f4f3eb;
@@ -126,10 +144,37 @@ span {
     text-align: center;
 }
 
-.cpp-logo img {
+.cpp-image {
     width: 280px;
     height: 280px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    opacity: 1;
+    position: relative;
+}
+
+.cpp-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.selfie {
+    opacity: 0;
+}
+
+.cpp-image:hover .selfie {
+    opacity: 1;
+}
+
+.cpp-image:hover .logo {
+    opacity: 0;
 }
 
 /*------Experience Section------*/
@@ -225,8 +270,8 @@ span {
 
 .skills-and-abilities:hover .skills-list {
     opacity: 1;
-    -webkit-transition: 0.2s ease;
-    transition: 0.2s ease;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 .skills-and-abilities:hover h3 {
